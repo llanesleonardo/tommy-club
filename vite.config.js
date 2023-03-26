@@ -1,5 +1,8 @@
-import { defineConfig } from "cite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/tommy/",
+  build: {
+    outDir: "./public/",
+    emptyOutDir: true,
+  },
 });
