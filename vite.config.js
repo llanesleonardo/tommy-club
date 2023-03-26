@@ -5,5 +5,4 @@ export default defineConfig({
     outDir: "./public/",
     emptyOutDir: true,
   },
-  base: "https://digitalbusiness2.gitlab.io/tommy/",
 });
