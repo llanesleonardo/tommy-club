@@ -8,13 +8,6 @@ document.querySelector("#app").innerHTML = `
   <section id="content">
     <div class="loading"></div>
   </section>
-  <div class="container vh-100">
-    <div class="row vh-100">
-      <div class="col-12 d-flex justify-content-center align-items-center">
-
-      </div>
-    </div>
-  </div>
   <footer id="footer"></footer>
 </main>
 `;
