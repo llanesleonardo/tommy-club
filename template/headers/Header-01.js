@@ -7,11 +7,11 @@ const Headers = () => {
     <nav class="main-nav">
     <div class="wrapper-navs">
       <ul class="nav-list">
-        <li class="nav-item"><a href="">Bienvenido</a></li>
-        <li class="nav-item"><a href="">¿Como comprar?</a></li>
-        <li class="nav-item"><a href="">El club</a></li>
-        <li class="nav-item"><a href="">El Equipo</a></li>
-        <li class="nav-item"><a href="">Contacto</a></li>
+        <li class="nav-item"><a href="#bienvenido">Bienvenido</a></li>
+        <li class="nav-item"><a href="#comprar">¿Como comprar?</a></li>
+        <li class="nav-item"><a href="#elclub">El club</a></li>
+        <li class="nav-item"><a href="#elequipo">El equipo</a></li>
+        <li class="nav-item"><a href="#contacto">Contacto</a></li>
       </ul>
       <ul class="social-nav">
         <li class="nav-social-item"><a href=""><object type="image/svg+xml" class="redes-icons" data="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Felementos-06.svg" width="30" height="30">Twitter</object></a></li>
