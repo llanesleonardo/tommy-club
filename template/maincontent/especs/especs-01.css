@@ -1,0 +1,20 @@
+.main-especs {
+  width: 70%;
+}
+.main-especs-title {
+  text-align: left;
+  color: white;
+}
+
+.main-especs-content {
+  color: white;
+}
+
+.main-especs-icon {
+  width: 20px;
+}
+
+.main-especs-img {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
