@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const s of e)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(e){const s={};return e.integrity&&(s.integrity=e.integrity),e.referrerPolicy&&(s.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?s.credentials="include":e.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(e){if(e.ep)return;e.ep=!0;const s=a(e);fetch(e.href,s)}})();const m=()=>`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))o(t);new MutationObserver(t=>{for(const s of t)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(t){const s={};return t.integrity&&(s.integrity=t.integrity),t.referrerPolicy&&(s.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?s.credentials="include":t.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(t){if(t.ep)return;t.ep=!0;const s=a(t);fetch(t.href,s)}})();const m=()=>`
     <div class="top-header"><img class="img-logo" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
     <div class="wrapper-navs">
@@ -65,7 +65,7 @@
                 </ul>
             </div>
         </div>
-    `;const h=()=>`
+    `;const v=()=>`
         <div class="main-promo">
             <div class="main-promo-left">
                 <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fpromos%2FTommy-03-minified.png" class="main-promo-right-img" />       
@@ -77,7 +77,7 @@
               
             </div>
         </div>
-    `;const v=()=>`
+    `;const u=()=>`
         <div class="main-especs">
             <div class="main-especs-block">
                 <h2 class="main-especs-title">Especificaciones <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Ficons%2Ficono%20especificaciones-08.png" class="main-especs-icon"/></h2>
@@ -90,18 +90,28 @@
             <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fespecs%2Fpartes-tommy-04-minified.png" class="main-especs-img" />
             </div>
         </div>
+    `;const h=()=>`
+        <div class="main-club">
+            <div class="main-club-block">
+                <h2 class="main-club-title">El club</h2>
+                <p class="main-club-content">Cuando tu compras un tommy no simplemente compras un avatar o posiblemente una pieza de
+                arte. Tu ganas el acceso a un club con beneficios y ofertas que aumentará durante el tiempo. Estos
+                NFT puede servirte como una identidad digital, y esta identidad puede abrir puertas digitales por ti.t</p>
+            </div>
+        </div>
     `,y=async()=>`
         <div class="main-home">
             ${p()}
             ${g()}
-            ${h()}
             ${v()}
+            ${u()}
+            ${h()}
         </div>
     `;const r=()=>`
     <div>ERROR0404</div>
-`,u=()=>location.hash.slice(1).split("/")[1]||"/",f=t=>t.length<=3?t==="/"?t:"/:id":`/${t}`,w=()=>`
+`,f=()=>location.hash.slice(1).split("/")[1]||"/",b=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,w=()=>`
     <div>Variant</div>
-`,c={"/":y,"/:id":w,"/error404":r},l=async()=>{const t=document.getElementById("header"),i=document.getElementById("content"),a=document.getElementById("footer");t.innerHTML=await m();let o=u(),e=await f(o),s=c[e]?c[e]:r;i.innerHTML=await s(),a.innerHTML=await d()};document.querySelector("#app").innerHTML=`
+`,c={"/":y,"/:id":w,"/error404":r},l=async()=>{const e=document.getElementById("header"),i=document.getElementById("content"),a=document.getElementById("footer");e.innerHTML=await m();let o=f(),t=await b(o),s=c[t]?c[t]:r;i.innerHTML=await s(),a.innerHTML=await d()};document.querySelector("#app").innerHTML=`
 
 <main class="main">
   <header class="header" id="header"></header>
