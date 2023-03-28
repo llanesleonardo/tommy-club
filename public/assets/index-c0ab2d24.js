@@ -77,7 +77,7 @@
               
             </div>
         </div>
-    `;const u=()=>`
+    `;const h=()=>`
         <div class="main-especs">
             <div class="main-especs-block">
                 <h2 class="main-especs-title">Especificaciones <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Ficons%2Ficono%20especificaciones-08.png" class="main-especs-icon"/></h2>
@@ -90,10 +90,10 @@
             <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fespecs%2Fpartes-tommy-04-minified.png" class="main-especs-img" />
             </div>
         </div>
-    `;const h=()=>`
+    `;const u=()=>`
         <div class="main-club">
             <div class="main-club-block">
-                <h2 class="main-club-title">El club</h2>
+                <h2 class="main-club-title">EL CLUB</h2>
                 <p class="main-club-content">Cuando tu compras un tommy no simplemente compras un avatar o posiblemente una pieza de
                 arte. Tu ganas el acceso a un club con beneficios y ofertas que aumentará durante el tiempo. Estos
                 NFT puede servirte como una identidad digital, y esta identidad puede abrir puertas digitales por ti.t</p>
@@ -104,8 +104,8 @@
             ${p()}
             ${g()}
             ${v()}
-            ${u()}
             ${h()}
+            ${u()}
         </div>
     `;const r=()=>`
     <div>ERROR0404</div>
