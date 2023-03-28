@@ -11,6 +11,26 @@
   color: #28f758;
 }
 
+.main-roadmap-list {
+  padding-left: 0;
+}
+
 .main-roadmap-list li {
   color: white;
+}
+
+.main-roadmap-list li {
+  list-style-type: none;
+  counter-increment: item;
+}
+
+.main-roadmap-list li:before {
+  content: counter(item);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #10d0fc;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 100%;
 }
