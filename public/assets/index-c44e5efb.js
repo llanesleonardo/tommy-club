@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))o(t);new MutationObserver(t=>{for(const s of t)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(t){const s={};return t.integrity&&(s.integrity=t.integrity),t.referrerPolicy&&(s.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?s.credentials="include":t.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(t){if(t.ep)return;t.ep=!0;const s=a(t);fetch(t.href,s)}})();const m=()=>`
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))t(i);new MutationObserver(i=>{for(const s of i)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&t(n)}).observe(document,{childList:!0,subtree:!0});function o(i){const s={};return i.integrity&&(s.integrity=i.integrity),i.referrerPolicy&&(s.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?s.credentials="include":i.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function t(i){if(i.ep)return;i.ep=!0;const s=o(i);fetch(i.href,s)}})();const m=()=>`
     <div class="top-header"><img class="img-logo" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
     <div class="wrapper-navs">
@@ -77,7 +77,7 @@
               
             </div>
         </div>
-    `;const h=()=>`
+    `;const u=()=>`
         <div class="main-especs">
             <div class="main-especs-block">
                 <h2 class="main-especs-title">Especificaciones <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Ficons%2Ficono%20especificaciones-08.png" class="main-especs-icon"/></h2>
@@ -90,7 +90,7 @@
             <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fespecs%2Fpartes-tommy-04-minified.png" class="main-especs-img" />
             </div>
         </div>
-    `;const u=()=>`
+    `;const h=()=>`
         <div class="main-club">
             <div class="main-club-block">
                 <h2 class="main-club-title">EL CLUB</h2>
@@ -99,19 +99,37 @@
                 NFT puede servirte como una identidad digital, y esta identidad puede abrir puertas digitales por ti.t</p>
             </div>
         </div>
-    `,y=async()=>`
+    `;const y=()=>`
+        <div class="main-roadmap">
+            <div class="main-roadmap-block">
+                <h2 class="main-roadmap-title">ROADMAP</h2>
+                <ol class="main-roadmap-list">
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Proof of idea </li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Airdropped and Sales of Tommy NFT </li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Youtube channel, Podcast, Social networks</li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Member exclusive store, limited edition apparel</li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Crypto rewards / “We have to invent some game”</li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Ayudar a los artistas a llevar su arte digital a la web 3.0</li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Se empieza la escuela de tommy para emprendedores 3.0</li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Se inicia la tokenización de otras ideas innovadoras (inversiones)</li>
+                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Nuevas ideas para colaborar en el ambiente crypto</li>
+                </ol>
+            </div>
+        </div>
+    `,f=async()=>`
         <div class="main-home">
             ${p()}
             ${g()}
             ${v()}
-            ${h()}
             ${u()}
+            ${h()}
+            ${y()}
         </div>
-    `;const r=()=>`
+    `;const l=()=>`
     <div>ERROR0404</div>
-`,f=()=>location.hash.slice(1).split("/")[1]||"/",b=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,w=()=>`
+`,b=()=>location.hash.slice(1).split("/")[1]||"/",w=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,F=()=>`
     <div>Variant</div>
-`,c={"/":y,"/:id":w,"/error404":r},l=async()=>{const e=document.getElementById("header"),i=document.getElementById("content"),a=document.getElementById("footer");e.innerHTML=await m();let o=f(),t=await b(o),s=c[t]?c[t]:r;i.innerHTML=await s(),a.innerHTML=await d()};document.querySelector("#app").innerHTML=`
+`,c={"/":f,"/:id":F,"/error404":l},r=async()=>{const e=document.getElementById("header"),a=document.getElementById("content"),o=document.getElementById("footer");e.innerHTML=await m();let t=b(),i=await w(t),s=c[i]?c[i]:l;a.innerHTML=await s(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
 
 <main class="main">
   <header class="header" id="header"></header>
@@ -120,4 +138,4 @@
   </section>
   <footer id="footer"></footer>
 </main>
-`;window.addEventListener("load",l);window.addEventListener("hashchange",l);
+`;window.addEventListener("load",r);window.addEventListener("hashchange",r);
