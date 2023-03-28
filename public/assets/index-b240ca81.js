@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))t(i);new MutationObserver(i=>{for(const s of i)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&t(n)}).observe(document,{childList:!0,subtree:!0});function o(i){const s={};return i.integrity&&(s.integrity=i.integrity),i.referrerPolicy&&(s.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?s.credentials="include":i.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function t(i){if(i.ep)return;i.ep=!0;const s=o(i);fetch(i.href,s)}})();const m=()=>`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))a(i);new MutationObserver(i=>{for(const s of i)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&a(n)}).observe(document,{childList:!0,subtree:!0});function o(i){const s={};return i.integrity&&(s.integrity=i.integrity),i.referrerPolicy&&(s.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?s.credentials="include":i.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function a(i){if(i.ep)return;i.ep=!0;const s=o(i);fetch(i.href,s)}})();const m=()=>`
     <div class="top-header"><img class="img-logo" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
     <div class="wrapper-navs">
@@ -77,7 +77,7 @@
               
             </div>
         </div>
-    `;const u=()=>`
+    `;const h=()=>`
         <div class="main-especs">
             <div class="main-especs-block">
                 <h2 class="main-especs-title">Especificaciones <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Ficons%2Ficono%20especificaciones-08.png" class="main-especs-icon"/></h2>
@@ -90,7 +90,7 @@
             <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fespecs%2Fpartes-tommy-04-minified.png" class="main-especs-img" />
             </div>
         </div>
-    `;const h=()=>`
+    `;const u=()=>`
         <div class="main-club">
             <div class="main-club-block">
                 <h2 class="main-club-title">EL CLUB</h2>
@@ -116,20 +116,42 @@
                 </ol>
             </div>
         </div>
-    `,f=async()=>`
+    `;const f=()=>`
+        <div class="main-tools">
+            <div class="main-tools-block">
+                <h2 class="main-tools-title">HERRAMIENTAS DE LA COMMUNIDAD</h2>
+                <ul class="main-tools-list">
+                    <li class="main-tools-listitem"><a href="https://nftexp.io/" >https://nftexp.io/</a></li>
+                    <li class="main-tools-listitem"><a href="https://rarity.tools/" >https://rarity.tools/</a></li>
+                </ul>
+            </div>
+        </div>
+    `;const b=()=>`
+        <div class="main-team">
+            <div class="main-team-block">
+                <h2 class="main-team-title">EL EQUIPO</h2>
+                <p class="main-team-content">Tommy fue creado por 2 Expertos en diferentes áreas, pensando en innovar y probar sus
+                habilidades en el mundo web 3.0</p>
+                <p class="main-team-content"><a href="">Leonardo Llanes</a> <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Ficonos-07-twitter-blue.png" class="main-team-content-img" /></p>
+                <p class="main-team-content"><a href="">Valente Pacheco</a> <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Ficonos-07-twitter-blue.png" class="main-team-content-img" /></p>
+            </div>
+        </div>
+    `,w=async()=>`
         <div class="main-home">
             ${p()}
             ${g()}
             ${v()}
-            ${u()}
             ${h()}
+            ${u()}
             ${y()}
+            ${f()}
+            ${b()}
         </div>
     `;const l=()=>`
     <div>ERROR0404</div>
-`,b=()=>location.hash.slice(1).split("/")[1]||"/",w=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,F=()=>`
+`,F=()=>location.hash.slice(1).split("/")[1]||"/",E=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,T=()=>`
     <div>Variant</div>
-`,c={"/":f,"/:id":F,"/error404":l},r=async()=>{const e=document.getElementById("header"),a=document.getElementById("content"),o=document.getElementById("footer");e.innerHTML=await m();let t=b(),i=await w(t),s=c[i]?c[i]:l;a.innerHTML=await s(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
+`,c={"/":w,"/:id":T,"/error404":l},r=async()=>{const e=document.getElementById("header"),t=document.getElementById("content"),o=document.getElementById("footer");e.innerHTML=await m();let a=F(),i=await E(a),s=c[i]?c[i]:l;t.innerHTML=await s(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
 
 <main class="main">
   <header class="header" id="header"></header>
