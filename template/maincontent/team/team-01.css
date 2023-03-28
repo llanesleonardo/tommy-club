@@ -1,0 +1,25 @@
+.main-team {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.main-team-title {
+  color: #28f758;
+}
+
+.main-team-content {
+  color: white;
+}
+
+.main-team-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-team-content-img {
+  width: 20px;
+}
