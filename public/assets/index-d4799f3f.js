@@ -1,4 +1,4 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const i of e)if(i.type==="childList")for(const n of i.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(e){const i={};return e.integrity&&(i.integrity=e.integrity),e.referrerPolicy&&(i.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?i.credentials="include":e.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function o(e){if(e.ep)return;e.ep=!0;const i=a(e);fetch(e.href,i)}})();const m=()=>`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const s of e)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(e){const s={};return e.integrity&&(s.integrity=e.integrity),e.referrerPolicy&&(s.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?s.credentials="include":e.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(e){if(e.ep)return;e.ep=!0;const s=a(e);fetch(e.href,s)}})();const m=()=>`
     <div class="top-header"><img class="img-logo" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
     <div class="wrapper-navs">
@@ -27,7 +27,7 @@
     </ul>
       <p class="copyright">&copy; 3lstrategy</p>
     </div>
-`;const g=()=>`
+`;const p=()=>`
     <div id="hero" class="main-hero">
         <video width="750" height="450" autoplay class="hero-video-1">
           <source src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Ftommy-var.mp4" type="video/mp4">
@@ -35,7 +35,7 @@
         </video>
         <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Fwave%2001.png" class="main-hero-img" id="hero-img-1"/>
     </div>
-    `;const p=()=>`
+    `;const g=()=>`
         <div class="main-intro">
             <div class="main-intro-left">
                 <h2 class="main-intro-left-greentitle">BIENVENID@</h2>
@@ -77,17 +77,31 @@
               
             </div>
         </div>
-    `,v=async()=>`
+    `;const v=()=>`
+        <div class="main-especs">
+            <div class="main-especs-block">
+                <h2 class="main-especs-title">Especificaciones <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Ficons%2Ficono%20especificaciones-08.png" class="main-especs-icon"/></h2>
+                <p class="main-especs-content">Cada Tommy es único y esta programado de una manera que toma 7 posibles aspectos, incluyendo, ojos, nariz, boca, camiseta o saco, cabello y otros. Todos los tommy son geniales solamente hay
+                algunos mas raros que otros.</p>
+                <p class="main-especs-content">Estos nft están guardados en un ERC-721 Token en la blockchain de polygon. Se recomienda que se
+                use carteras validadas por la comunidad, como lo es Meta Mask Wallet.</p>
+            </div>
+            <div class="main-especs-block">
+            <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fespecs%2Fpartes-tommy-04-minified.png" class="main-especs-img" />
+            </div>
+        </div>
+    `,y=async()=>`
         <div class="main-home">
-            ${g()}
             ${p()}
+            ${g()}
             ${h()}
+            ${v()}
         </div>
     `;const r=()=>`
     <div>ERROR0404</div>
-`,u=()=>location.hash.slice(1).split("/")[1]||"/",y=t=>t.length<=3?t==="/"?t:"/:id":`/${t}`,f=()=>`
+`,u=()=>location.hash.slice(1).split("/")[1]||"/",f=t=>t.length<=3?t==="/"?t:"/:id":`/${t}`,w=()=>`
     <div>Variant</div>
-`,c={"/":v,"/:id":f,"/error404":r},l=async()=>{const t=document.getElementById("header"),s=document.getElementById("content"),a=document.getElementById("footer");t.innerHTML=await m();let o=u(),e=await y(o),i=c[e]?c[e]:r;s.innerHTML=await i(),a.innerHTML=await d()};document.querySelector("#app").innerHTML=`
+`,c={"/":y,"/:id":w,"/error404":r},l=async()=>{const t=document.getElementById("header"),i=document.getElementById("content"),a=document.getElementById("footer");t.innerHTML=await m();let o=u(),e=await f(o),s=c[e]?c[e]:r;i.innerHTML=await s(),a.innerHTML=await d()};document.querySelector("#app").innerHTML=`
 
 <main class="main">
   <header class="header" id="header"></header>
