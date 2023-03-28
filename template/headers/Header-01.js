@@ -1,7 +1,6 @@
 import "./header-01.css";
-import getHash from "../../utils/getHash";
+
 const Headers = () => {
-  getHash();
   const view = `
     <div class="top-header"><img class="img-logo" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
