@@ -19,6 +19,7 @@ html {
   src: url("./fonts/Product Sans Italic.ttf");
   font-style: italic;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +27,7 @@ html {
   src: url("./fonts/Product Sans Bold.ttf");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +35,7 @@ html {
   src: url("./fonts/Product Sans Bold Italic.ttf");
   font-style: italic;
   font-weight: bold;
+  font-display: swap;
 }
 
 body {
