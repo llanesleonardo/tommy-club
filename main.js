@@ -8,7 +8,10 @@ document.querySelector("#app").innerHTML = `
   <section id="content">
     <div class="loading"></div>
   </section>
-  <footer id="footer"></footer>
+  <footer id="footer">
+    <section id="content-footer">
+    </section>
+  </footer>
 </main>
 `;
 

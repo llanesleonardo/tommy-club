@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 20px 20px 20px 20px;
+  flex-wrap: wrap;
 }
 
 .main-hero-img {
@@ -12,4 +13,21 @@
   width: 350px;
   height: 350px;
   margin: 5px 10px 5px 10px;
+}
+
+.main-hero video {
+  max-width: 320px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .main-hero video {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-hero video {
+    max-width: 650px;
+  }
 }

@@ -1,5 +1,5 @@
 .main-roadmap {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -17,6 +17,7 @@
 
 .main-roadmap-list li {
   color: white;
+  line-height: 32px;
 }
 
 .main-roadmap-list li {
