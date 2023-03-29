@@ -151,13 +151,16 @@
     <div>ERROR0404</div>
 `,F=()=>location.hash.slice(1).split("/")[1]||"/",E=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,T=()=>`
     <div>Variant</div>
-`,c={"/":w,"/:id":T,"/error404":l},r=async()=>{const e=document.getElementById("header"),t=document.getElementById("content"),o=document.getElementById("footer");e.innerHTML=await m();let a=F(),i=await E(a),s=c[i]?c[i]:l;t.innerHTML=await s(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
+`,c={"/":w,"/:id":T,"/error404":l},r=async()=>{const e=document.getElementById("header"),t=document.getElementById("content"),o=document.getElementById("content-footer");e.innerHTML=await m();let a=F(),i=await E(a),s=c[i]?c[i]:l;t.innerHTML=await s(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
 
 <main class="main">
   <header class="header" id="header"></header>
   <section id="content">
     <div class="loading"></div>
   </section>
-  <footer id="footer"></footer>
+  <footer id="footer">
+    <section id="content-footer">
+    </section>
+  </footer>
 </main>
 `;window.addEventListener("load",r);window.addEventListener("hashchange",r);
