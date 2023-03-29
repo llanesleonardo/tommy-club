@@ -3,11 +3,11 @@
     <nav class="main-nav">
     <div class="wrapper-navs">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#bienvenido">Bienvenido</a></li>
-        <li class="nav-item"><a href="#comprar">¿Como comprar?</a></li>
-        <li class="nav-item"><a href="#elclub">El club</a></li>
-        <li class="nav-item"><a href="#elequipo">El equipo</a></li>
-        <li class="nav-item"><a href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a href="#intro">Bienvenido</a></li>
+        <li class="nav-item"><a href="#promo">¿Como comprar?</a></li>
+        <li class="nav-item"><a href="#club">El club</a></li>
+        <li class="nav-item"><a href="#team">El equipo</a></li>
+        <li class="nav-item"><a href="#contact">Contacto</a></li>
       </ul>
       <ul class="social-nav">
         <li class="nav-social-item"><a href=""><object type="image/svg+xml" class="redes-icons" data="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Felementos-06.svg" width="30" height="30">Twitter</object></a></li>
@@ -21,7 +21,7 @@
       <img loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogo-2-blanco.png" class="main-imgfooter" />
     </div>
     <div class="-bottom-footer">
-    <ul class="main-nav-socialfooter">
+    <ul class="main-nav-socialfooter" id="contact">
       <li class="main-nav-socialfooter-item"><a href=""><object type="image/svg+xml" class="main-socialfooter-itemicon" data="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Felementos-06.svg" width="30" height="30">Twitter</object></a></li>
       <li class="main-nav-socialfooter-item"><a href=""><object type="image/svg+xml" class="main-socialfooter-itemicon" data="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Felementos-03.svg" width="30" height="30">Twitter</object></a></li>
     </ul>
@@ -37,7 +37,7 @@
     </div>
     `;const g=()=>`
         <div class="main-intro">
-            <div class="main-intro-left">
+            <div class="main-intro-left" id="intro">
                 <h2 class="main-intro-left-greentitle">BIENVENID@</h2>
                 <p class="main-intro-left-content">
                     Es una colección de NFT, que son únicos, digitales y coleccionables viviendo en la blockchain de Polygon.
@@ -67,7 +67,7 @@
         </div>
     `;const v=()=>`
         <div class="main-promo">
-            <div class="main-promo-left">
+            <div class="main-promo-left" id="promo">
                 <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fpromos%2FTommy-03-minified.png" class="main-promo-right-img" />       
             </div>
             <div class="main-promo-right">
@@ -92,7 +92,7 @@
         </div>
     `;const u=()=>`
         <div class="main-club">
-            <div class="main-club-block">
+            <div class="main-club-block" id="club">
                 <h2 class="main-club-title">EL CLUB</h2>
                 <p class="main-club-content">Cuando tu compras un tommy no simplemente compras un avatar o posiblemente una pieza de
                 arte. Tu ganas el acceso a un club con beneficios y ofertas que aumentará durante el tiempo. Estos
@@ -128,7 +128,7 @@
         </div>
     `;const b=()=>`
         <div class="main-team">
-            <div class="main-team-block">
+            <div class="main-team-block" id="team">
                 <h2 class="main-team-title">EL EQUIPO</h2>
                 <p class="main-team-content">Tommy fue creado por 2 Expertos en diferentes áreas, pensando en innovar y probar sus
                 habilidades en el mundo web 3.0</p>
