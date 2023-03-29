@@ -1,5 +1,5 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))a(i);new MutationObserver(i=>{for(const s of i)if(s.type==="childList")for(const n of s.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&a(n)}).observe(document,{childList:!0,subtree:!0});function o(i){const s={};return i.integrity&&(s.integrity=i.integrity),i.referrerPolicy&&(s.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?s.credentials="include":i.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function a(i){if(i.ep)return;i.ep=!0;const s=o(i);fetch(i.href,s)}})();const m=()=>`
-    <div class="top-header"><img class="img-logo" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))s(i);new MutationObserver(i=>{for(const t of i)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&s(n)}).observe(document,{childList:!0,subtree:!0});function o(i){const t={};return i.integrity&&(t.integrity=i.integrity),i.referrerPolicy&&(t.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?t.credentials="include":i.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(i){if(i.ep)return;i.ep=!0;const t=o(i);fetch(i.href,t)}})();const m=()=>`
+    <div class="top-header"><img class="img-logo" loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
     <div class="wrapper-navs">
       <ul class="nav-list">
@@ -18,7 +18,7 @@
     `;const d=()=>`
     <div class="top-footer"></div>
     <div class="main-footer">
-      <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogo-2-blanco.png" class="main-imgfooter" />
+      <img loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogo-2-blanco.png" class="main-imgfooter" />
     </div>
     <div class="-bottom-footer">
     <ul class="main-nav-socialfooter">
@@ -33,7 +33,7 @@
           <source src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Ftommy-var.mp4" type="video/mp4">
            Your browser does not support the video tag.
         </video>
-        <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Fwave%2001.png" class="main-hero-img" id="hero-img-1"/>
+        <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Fwave%2001.png" class="main-hero-img" id="hero-img-1"/>
     </div>
     `;const g=()=>`
         <div class="main-intro">
@@ -58,17 +58,17 @@
             </div>
             <div class="main-intro-right">
                 <ul class="main-intro-right-list">
-                    <li class="main-intro-right-list-item"><img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F1-minified.png" class="main-intro-right-img" /></li>
-                    <li class="main-intro-right-list-item"><img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F2-minified.png" class="main-intro-right-img" /></li>
-                    <li class="main-intro-right-list-item"><img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F3-minified.png" class="main-intro-right-img" /></li>
-                    <li class="main-intro-right-list-item"><img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F4-minified.png" class="main-intro-right-img" /></li>
+                    <li class="main-intro-right-list-item"><img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F1-minified.png" class="main-intro-right-img" /></li>
+                    <li class="main-intro-right-list-item"><img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F2-minified.png" class="main-intro-right-img" /></li>
+                    <li class="main-intro-right-list-item"><img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F3-minified.png" class="main-intro-right-img" /></li>
+                    <li class="main-intro-right-list-item"><img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fintros%2F4-minified.png" class="main-intro-right-img" /></li>
                 </ul>
             </div>
         </div>
     `;const v=()=>`
         <div class="main-promo">
             <div class="main-promo-left">
-                <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fpromos%2FTommy-03-minified.png" class="main-promo-right-img" />       
+                <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fpromos%2FTommy-03-minified.png" class="main-promo-right-img" />       
             </div>
             <div class="main-promo-right">
                 <h2 class="main-promo-right-title">¿COMPRAR AHORA?</h2>
@@ -80,14 +80,14 @@
     `;const h=()=>`
         <div class="main-especs">
             <div class="main-especs-block">
-                <h2 class="main-especs-title">Especificaciones <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Ficons%2Ficono%20especificaciones-08.png" class="main-especs-icon"/></h2>
+                <h2 class="main-especs-title">Especificaciones <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Ficons%2Ficono%20especificaciones-08.png" class="main-especs-icon"/></h2>
                 <p class="main-especs-content">Cada Tommy es único y esta programado de una manera que toma 7 posibles aspectos, incluyendo, ojos, nariz, boca, camiseta o saco, cabello y otros. Todos los tommy son geniales solamente hay
                 algunos mas raros que otros.</p>
                 <p class="main-especs-content">Estos nft están guardados en un ERC-721 Token en la blockchain de polygon. Se recomienda que se
                 use carteras validadas por la comunidad, como lo es Meta Mask Wallet.</p>
             </div>
             <div class="main-especs-block">
-            <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fespecs%2Fpartes-tommy-04-minified.png" class="main-especs-img" />
+            <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fespecs%2Fpartes-tommy-04-minified.png" class="main-especs-img" />
             </div>
         </div>
     `;const u=()=>`
@@ -104,15 +104,15 @@
             <div class="main-roadmap-block">
                 <h2 class="main-roadmap-title">ROADMAP</h2>
                 <ol class="main-roadmap-list">
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Proof of idea </li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Airdropped and Sales of Tommy NFT </li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Youtube channel, Podcast, Social networks</li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Member exclusive store, limited edition apparel</li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Crypto rewards / “We have to invent some game”</li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Ayudar a los artistas a llevar su arte digital a la web 3.0</li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Se empieza la escuela de tommy para emprendedores 3.0</li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Se inicia la tokenización de otras ideas innovadoras (inversiones)</li>
-                    <li class="main-roadmap-listitem"><img src="" class="main-roadmap-listitem-img"/> Nuevas ideas para colaborar en el ambiente crypto</li>
+                    <li class="main-roadmap-listitem"> Proof of idea </li>
+                    <li class="main-roadmap-listitem"> Airdropped and Sales of Tommy NFT </li>
+                    <li class="main-roadmap-listitem"> Youtube channel, Podcast, Social networks</li>
+                    <li class="main-roadmap-listitem"> Member exclusive store, limited edition apparel</li>
+                    <li class="main-roadmap-listitem"> Crypto rewards / “We have to invent some game”</li>
+                    <li class="main-roadmap-listitem"> Ayudar a los artistas a llevar su arte digital a la web 3.0</li>
+                    <li class="main-roadmap-listitem"> Se empieza la escuela de tommy para emprendedores 3.0</li>
+                    <li class="main-roadmap-listitem"> Se inicia la tokenización de otras ideas innovadoras (inversiones)</li>
+                    <li class="main-roadmap-listitem"> Nuevas ideas para colaborar en el ambiente crypto</li>
                 </ol>
             </div>
         </div>
@@ -132,8 +132,8 @@
                 <h2 class="main-team-title">EL EQUIPO</h2>
                 <p class="main-team-content">Tommy fue creado por 2 Expertos en diferentes áreas, pensando en innovar y probar sus
                 habilidades en el mundo web 3.0</p>
-                <p class="main-team-content"><a href="">Leonardo Llanes</a> <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Ficonos-07-twitter-blue.png" class="main-team-content-img" /></p>
-                <p class="main-team-content"><a href="">Valente Pacheco</a> <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Ficonos-07-twitter-blue.png" class="main-team-content-img" /></p>
+                <p class="main-team-content"><a href="">Leonardo Llanes</a> <img loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Ficonos-07-twitter-blue.png" class="main-team-content-img" /></p>
+                <p class="main-team-content"><a href="">Valente Pacheco</a> <img loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fredes%2Ficonos-07-twitter-blue.png" class="main-team-content-img" /></p>
             </div>
         </div>
     `,w=async()=>`
@@ -151,7 +151,7 @@
     <div>ERROR0404</div>
 `,F=()=>location.hash.slice(1).split("/")[1]||"/",E=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,T=()=>`
     <div>Variant</div>
-`,c={"/":w,"/:id":T,"/error404":l},r=async()=>{const e=document.getElementById("header"),t=document.getElementById("content"),o=document.getElementById("content-footer");e.innerHTML=await m();let a=F(),i=await E(a),s=c[i]?c[i]:l;t.innerHTML=await s(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
+`,c={"/":w,"/:id":T,"/error404":l},r=async()=>{const e=document.getElementById("header"),a=document.getElementById("content"),o=document.getElementById("content-footer");e.innerHTML=await m();let s=F(),i=await E(s),t=c[i]?c[i]:l;a.innerHTML=await t(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
 
 <main class="main">
   <header class="header" id="header"></header>
