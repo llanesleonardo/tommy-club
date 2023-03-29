@@ -2,7 +2,7 @@ import "./header-01.css";
 
 const Headers = () => {
   const view = `
-    <div class="top-header"><img class="img-logo" loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
+    <div class="top-header"><img class="img-logo"  src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
     <div class="wrapper-navs">
       <ul class="nav-list">
