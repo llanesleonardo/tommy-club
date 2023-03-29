@@ -3,7 +3,7 @@ import "./intro-01.css";
 const Intro = () => {
   const view = `
         <div class="main-intro">
-            <div class="main-intro-left">
+            <div class="main-intro-left" id="intro">
                 <h2 class="main-intro-left-greentitle">BIENVENID@</h2>
                 <p class="main-intro-left-content">
                     Es una colección de NFT, que son únicos, digitales y coleccionables viviendo en la blockchain de Polygon.

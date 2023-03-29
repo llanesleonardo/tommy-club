@@ -3,7 +3,7 @@ import "./team-01.css";
 const Team = () => {
   const view = `
         <div class="main-team">
-            <div class="main-team-block">
+            <div class="main-team-block" id="team">
                 <h2 class="main-team-title">EL EQUIPO</h2>
                 <p class="main-team-content">Tommy fue creado por 2 Expertos en diferentes áreas, pensando en innovar y probar sus
                 habilidades en el mundo web 3.0</p>

@@ -3,7 +3,7 @@ import "./promo-01.css";
 const Promo = () => {
   const view = `
         <div class="main-promo">
-            <div class="main-promo-left">
+            <div class="main-promo-left" id="promo">
                 <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fpromos%2FTommy-03-minified.png" class="main-promo-right-img" />       
             </div>
             <div class="main-promo-right">

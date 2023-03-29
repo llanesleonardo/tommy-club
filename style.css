@@ -5,6 +5,7 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -66,6 +67,9 @@ h2 {
 
 #header {
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: black;
 }
 
 #content,
