@@ -4,7 +4,7 @@ const Promo = () => {
   const view = `
         <div class="main-promo">
             <div class="main-promo-left">
-                <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fpromos%2FTommy-03-minified.png" class="main-promo-right-img" />       
+                <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fpromos%2FTommy-03-minified.png" class="main-promo-right-img" />       
             </div>
             <div class="main-promo-right">
                 <h2 class="main-promo-right-title">¿COMPRAR AHORA?</h2>

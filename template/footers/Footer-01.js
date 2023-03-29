@@ -4,7 +4,7 @@ const Footer = () => {
   const view = `
     <div class="top-footer"></div>
     <div class="main-footer">
-      <img src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogo-2-blanco.png" class="main-imgfooter" />
+      <img loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogo-2-blanco.png" class="main-imgfooter" />
     </div>
     <div class="-bottom-footer">
     <ul class="main-nav-socialfooter">

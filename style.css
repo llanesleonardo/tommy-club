@@ -12,6 +12,7 @@ html {
   src: url("./fonts/Product Sans Regular.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
