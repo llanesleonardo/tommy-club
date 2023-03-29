@@ -1,5 +1,5 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))s(i);new MutationObserver(i=>{for(const t of i)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&s(n)}).observe(document,{childList:!0,subtree:!0});function o(i){const t={};return i.integrity&&(t.integrity=i.integrity),i.referrerPolicy&&(t.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?t.credentials="include":i.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(i){if(i.ep)return;i.ep=!0;const t=o(i);fetch(i.href,t)}})();const m=()=>`
-    <div class="top-header"><img class="img-logo" loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))a(i);new MutationObserver(i=>{for(const t of i)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&a(n)}).observe(document,{childList:!0,subtree:!0});function o(i){const t={};return i.integrity&&(t.integrity=i.integrity),i.referrerPolicy&&(t.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?t.credentials="include":i.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(i){if(i.ep)return;i.ep=!0;const t=o(i);fetch(i.href,t)}})();const m=()=>`
+    <div class="top-header"><img class="img-logo"  src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Flogos%2Flogotipo-minified.png"/></div>
     <nav class="main-nav">
     <div class="wrapper-navs">
       <ul class="nav-list">
@@ -33,7 +33,7 @@
           <source src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Ftommy-var.mp4" type="video/mp4">
            Your browser does not support the video tag.
         </video>
-        <img  loading="lazy" src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Fwave%2001.png" class="main-hero-img" id="hero-img-1"/>
+        <img  src="https://3lstrategy.nyc3.cdn.digitaloceanspaces.com/tommy%2Fhero%2Fwave%2001.png" class="main-hero-img" id="hero-img-1"/>
     </div>
     `;const g=()=>`
         <div class="main-intro">
@@ -151,7 +151,7 @@
     <div>ERROR0404</div>
 `,F=()=>location.hash.slice(1).split("/")[1]||"/",E=e=>e.length<=3?e==="/"?e:"/:id":`/${e}`,T=()=>`
     <div>Variant</div>
-`,c={"/":w,"/:id":T,"/error404":l},r=async()=>{const e=document.getElementById("header"),a=document.getElementById("content"),o=document.getElementById("content-footer");e.innerHTML=await m();let s=F(),i=await E(s),t=c[i]?c[i]:l;a.innerHTML=await t(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
+`,c={"/":w,"/:id":T,"/error404":l},r=async()=>{const e=document.getElementById("header"),s=document.getElementById("content"),o=document.getElementById("content-footer");e.innerHTML=await m();let a=F(),i=await E(a),t=c[i]?c[i]:l;s.innerHTML=await t(),o.innerHTML=await d()};document.querySelector("#app").innerHTML=`
 
 <main class="main">
   <header class="header" id="header"></header>
